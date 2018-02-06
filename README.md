@@ -31,7 +31,13 @@ Please notice there is a mistake in the paper (after the fourth bottleneck layer
 | 1 × 1 × k                                                   | conv2d 1x1  | - | k    |   |   |
 
 Each line describes a sequence of 1 or more identical (modulo stride) layers, repeated n times. All layers in the same sequence have the same number c of output channels. The first layer of each sequence has a stride s and all others use stride 1. All spatial convolutions use 3 × 3 kernels. The expansion factor t is always applied to the input size.
+### Linear Bottlenecks architecture
+The bottleneck blocks use shortcut directly between the bottlenecks to improve the ability of gradient to propagate across multipler layers.
+- Because ReLU is capable of preserving information only if the input manifold lies in a low-dimensional subspace of the input space, the input and output data of linear bottlenecks is in low-dimension space. 
+- Stride (s) in the depthwise convolutions is for down sampling. 
+- Expansion ratio (t) is greater than 1 for projecting the low dimensioal data to high dimension.
 
+![image](image/image/linear_bottleneck.png) 
 ## TODO
 - [ ] Pre-trained model (Next week)
 - [ ] Time test in 1080Ti
