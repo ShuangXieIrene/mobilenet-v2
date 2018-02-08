@@ -77,7 +77,7 @@ def mobilenet_v2_base(inputs,
       'InvertedResidual_64_0', 'InvertedResidual_64_1', 'InvertedResidual_64_2', 'InvertedResidual_64_3',
       'InvertedResidual_96_0', 'InvertedResidual_96_1', 'InvertedResidual_96_2',
       'InvertedResidual_160_0', 'InvertedResidual_160_1', 'InvertedResidual_160_2', 
-      'InvertedResidual_320_0', Conv2d_8]
+      'InvertedResidual_320_0', 'Conv2d_8']
     min_depth: Minimum depth value (number of channels) for all convolution ops.
       Enforced when depth_multiplier < 1, and not an active constraint when
       depth_multiplier >= 1.
