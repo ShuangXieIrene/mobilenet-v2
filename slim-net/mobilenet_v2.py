@@ -72,11 +72,12 @@ def mobilenet_v2_base(inputs,
   Args:
     inputs: a tensor of shape [batch_size, height, width, channels].
     final_endpoint: specifies the endpoint to construct the network up to. It
-      can be one of ['Conv2d_0', 'Conv2d_1_pointwise', 'Conv2d_2_pointwise',
-      'Conv2d_3_pointwise', 'Conv2d_4_pointwise', 'Conv2d_5'_pointwise,
-      'Conv2d_6_pointwise', 'Conv2d_7_pointwise', 'Conv2d_8_pointwise',
-      'Conv2d_9_pointwise', 'Conv2d_10_pointwise', 'Conv2d_11_pointwise',
-      'Conv2d_12_pointwise', 'Conv2d_13_pointwise'].
+      can be one of ['Conv2d_0', 'InvertedResidual_16_0', 'InvertedResidual_24_0', 'InvertedResidual_24_1',
+      'InvertedResidual_32_0', 'InvertedResidual_32_1', 'InvertedResidual_32_2',
+      'InvertedResidual_64_0', 'InvertedResidual_64_1', 'InvertedResidual_64_2', 'InvertedResidual_64_3',
+      'InvertedResidual_96_0', 'InvertedResidual_96_1', 'InvertedResidual_96_2',
+      'InvertedResidual_160_0', 'InvertedResidual_160_1', 'InvertedResidual_160_2', 
+      'InvertedResidual_320_0', Conv2d_8]
     min_depth: Minimum depth value (number of channels) for all convolution ops.
       Enforced when depth_multiplier < 1, and not an active constraint when
       depth_multiplier >= 1.
