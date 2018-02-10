@@ -6,6 +6,13 @@ Repository for "[Inverted Residuals and Linear Bottlenecks: Mobile Networks for 
 - tensorflow
 - [tensorflow-slim](https://github.com/tensorflow/models/tree/master/research/slim) (optional)
 
+## Training & Accuracy
+The model was trained with SGD+Momentum optimizer.
+
+|   Optimizer  |   iter   |  Top1 |  Top5 |                    Pre-trained Model                    |
+|:------------:|:--------:|:-----:|:-----:|:-------------------------------------------------------:|
+| SGD+Momentum | 1million | 67.8% | 87.9% | [google drive](https://drive.google.com/open?id=1yeIW6RyXsi4ZDctorIb2gc9NlJB-7nsc) |
+
 ## Usage
 The MobilenetV2 is implemented by two versions:
 - [By tensorflow-slim](https://github.com/ShuangXieIrene/MobilenetV2.tensorflow/tree/master/slim-net). 
@@ -39,7 +46,7 @@ The bottleneck blocks use shortcut directly between the bottlenecks to improve t
 
 ![image](image/image/linear_bottleneck.png) 
 ## TODO
-- [ ] Pre-trained model (Next week)
+- [x] Pre-trained model 
 - [ ] Time test in 1080Ti
 
 
