@@ -11,7 +11,8 @@ The model was trained with SGD+Momentum optimizer.
 
 |   Optimizer  |   iter   |  Top1 |  Top5 |                    Pre-trained Model                    |
 |:------------:|:--------:|:-----:|:-----:|:-------------------------------------------------------:|
-| SGD+Momentum | 1million | 67.8% | 87.9% | [google drive](https://drive.google.com/open?id=1yeIW6RyXsi4ZDctorIb2gc9NlJB-7nsc) |
+| SGD          | 1million | 69.7% | 89.2% | [google drive](https://drive.google.com/open?id=1PBCvhhpoExLg_tYDr_HaGOkeXeFELd_p)
+|
 
 ## Usage
 The MobilenetV2 is implemented by two versions:
